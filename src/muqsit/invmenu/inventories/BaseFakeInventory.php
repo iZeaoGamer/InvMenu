@@ -136,7 +136,7 @@ abstract class BaseFakeInventory extends ContainerInventory{
 	protected function sendTile(Player $player, Vector3 $pos, CompoundTag $nbt) : void{
 		$nbt->setString("id", $this->getTileId());
 
-		$pk = new BlockEntityDataPacket();
+		$pk = new BlockActorDataPacket();
 		$pk->x = $pos->x;
 		$pk->y = $pos->y;
 		$pk->z = $pos->z;
