@@ -2,6 +2,7 @@
 branches:
 - master
 - "4.0"
+- patch-1
 projects:
   InvMenu:
     model: virion
